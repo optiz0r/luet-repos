@@ -1,0 +1,3 @@
+[submodule "luet-tree"]
+	path = sabayon
+	url = git@github.com:Luet-lab/tree.git

@@ -1,0 +1,14 @@
+---
+image: "sabayon/builder-amd64"
+env:
+  - ACCEPT_LICENSE=*
+prelude:
+  - "source /etc/profile && equo install virtual/jre:1.8 dev-libs/libdbusmenu dev-python/pip"
+steps:
+  - "source /etc/profile && emerge =dev-util/pycharm-professional-2020.1"
+includes:
+  - /usr/portage/packages/.*
+requires:
+  - category: "layer"
+    version: ">=0.1"
+    name: "core-desktop-build"

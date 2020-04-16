@@ -7,4 +7,4 @@ prelude:
   - "equo install virtual/jre:1.8 dev-libs/libdbusmenu dev-python/pip"
 steps:
   - "source /etc/profile"
-  - emerge pycharm-professional
+  - "emerge =dev-util/pycharm-professional-2019.3.3"
